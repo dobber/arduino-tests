@@ -7,6 +7,7 @@ const int maxDuration = 1000;  // maximum wait between blinks
 void setup() {
   // put your setup code here, to run once:
   pinMode(ledPin, OUTPUT); // enable output of the led pin
+  Serial.begin(9600);  // initialize Serial console
 }
 
 void loop() {
@@ -15,6 +16,8 @@ void loop() {
   // the next line scales the blink rate between the min and max values
   rate = map(rate, 200, 800, minDuration, maxDuration);  // convert the blink rate
   rate = constrain(rate, minDuration, maxDuration);  // constrain the value
+  Serial.print("The blink rate is now: ");
+  Serial.println(rate);  // print rate to serial monitor
   digitalWrite(ledPin,HIGH);  // set the LED on
   delay(rate);  // wait duration dependant on the light level
   digitalWrite(ledPin,LOW);  // set the LED off
