@@ -1,0 +1,32 @@
+AND	0 0 = 0
+AND	1 0 = 0
+AND	0 1 = 0
+AND	1 1 = 0
+
+OR	0 0 = 0
+OR	1 0 = 1
+OR	0 1 = 1
+OR	1 1 = 1
+
+NOT	0 = 1
+NOT	1 = 0
+
+NAND	0 0 = 1
+NAND	1 0 = 1
+NAND	0 1 = 1
+NAND	1 1 = 0
+
+NOR	0 0 = 1
+NOR	1 0 = 0
+NOR	0 1 = 0
+NOR	1 1 = 0
+
+XOR	0 0 = 0
+XOR	1 0 = 1
+XOR	0 1 = 1
+XOR	1 1 = 0
+
+XNOR	0 0 = 1
+XNOR	1 0 = 0
+XNOR	0 1 = 0
+XNOR	1 1 = 1
